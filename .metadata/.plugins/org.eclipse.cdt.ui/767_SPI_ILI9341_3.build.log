@@ -1,0 +1,25 @@
+22:12:24 **** Incremental Build of configuration Debug for project 767_SPI_ILI9341_3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/USER/STM32CubeIDE/workspace_1.16.0/767_SPI_ILI9341_3/Drivers/ILI9341" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:157:55: warning: 'position_array' is used uninitialized [-Wuninitialized]
+  157 |                                                 x_pos = position_array[0];
+      |                                                 ~~~~~~^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:153:58: note: 'position_array' declared here
+  153 |                                                 uint16_t position_array[2];
+      |                                                          ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "767_SPI_ILI9341_3.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\USER\STM32CubeIDE\workspace_1.16.0\767_SPI_ILI9341_3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="767_SPI_ILI9341_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: 767_SPI_ILI9341_3.elf has a LOAD segment with RWX permissions
+Finished building target: 767_SPI_ILI9341_3.elf
+ 
+arm-none-eabi-size  767_SPI_ILI9341_3.elf 
+arm-none-eabi-objdump -h -S 767_SPI_ILI9341_3.elf  > "767_SPI_ILI9341_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  31764	    480	   2232	  34476	   86ac	767_SPI_ILI9341_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 767_SPI_ILI9341_3.list
+ 
+
+22:12:26 Build Finished. 0 errors, 2 warnings. (took 2s.478ms)
+

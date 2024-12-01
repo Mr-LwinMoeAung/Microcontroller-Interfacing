@@ -1,0 +1,17 @@
+02:35:12 **** Incremental Build of configuration Debug for project lab06 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc -o "lab06.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab06\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab06.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab06.elf
+ 
+arm-none-eabi-size  lab06.elf 
+arm-none-eabi-objdump -h -S lab06.elf  > "lab06.list"
+   text	   data	    bss	    dec	    hex	filename
+  14680	     92	   2196	  16968	   4248	lab06.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab06.list
+ 
+
+02:35:13 Build Finished. 0 errors, 0 warnings. (took 1s.324ms)
+

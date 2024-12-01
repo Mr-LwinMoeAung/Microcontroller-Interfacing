@@ -1,0 +1,46 @@
+2024-08-14 01:19:25,988 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 448433840 Bytes (709885952)
+2024-08-14 01:19:28,633 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 571117232 Bytes (709885952)
+2024-08-14 01:19:28,946 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 230221712 Bytes (709885952)
+2024-08-14 01:19:29,697 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-08-14 01:19:29,697 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-08-14 01:19:29,697 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-08-14 01:19:29,697 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-08-14 01:19:29,697 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: CORTEX_M7
+2024-08-14 01:19:29,698 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-08-14 01:19:29,700 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-08-14 01:19:29,931 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\MXTmpFiles\license.tmp_save
+2024-08-14 01:19:30,742 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\MXTmpFiles\license.tmp
+2024-08-14 01:19:31,048 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\gpio.c_save
+2024-08-14 01:19:31,331 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\gpio.c
+2024-08-14 01:19:31,363 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\gpio.h_save
+2024-08-14 01:19:31,526 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\gpio.h
+2024-08-14 01:19:31,973 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\MXTmpFiles\cortex.tmp_save
+2024-08-14 01:19:32,152 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\MXTmpFiles\cortex.tmp
+2024-08-14 01:19:32,191 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\usart.c_save
+2024-08-14 01:19:32,476 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\usart.c
+2024-08-14 01:19:32,502 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\usart.h_save
+2024-08-14 01:19:32,621 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\usart.h
+2024-08-14 01:19:32,653 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\stm32f7xx_it.c_save
+2024-08-14 01:19:32,871 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\stm32f7xx_it.c
+2024-08-14 01:19:32,897 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\stm32f7xx_it.h_save
+2024-08-14 01:19:32,988 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\stm32f7xx_it.h
+2024-08-14 01:19:33,026 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\stm32f7xx_hal_msp.c_save
+2024-08-14 01:19:33,136 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\stm32f7xx_hal_msp.c
+2024-08-14 01:19:33,149 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\MXTmpFiles\system.tmp_save
+2024-08-14 01:19:33,227 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\MXTmpFiles\system.tmp
+2024-08-14 01:19:33,263 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\stm32f7xx_hal_conf.h_save
+2024-08-14 01:19:33,365 [INFO] CodeEngine:335 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\stm32f7xx_hal_conf.h
+2024-08-14 01:19:33,462 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\main.h_save
+2024-08-14 01:19:33,569 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Inc\main.h
+2024-08-14 01:19:33,593 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\main.c_save
+2024-08-14 01:19:33,784 [INFO] CodeEngine:279 - Generated code: C:\Users\USER\STM32CubeIDE\workspace_1.16.0\lab3\Core\Src\main.c
+2024-08-14 01:19:34,403 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 248mS.
+2024-08-14 01:19:34,411 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-08-14 01:19:34,532 [INFO] ConfigFileManager:1531 - The Die is : DIE451
+2024-08-14 01:19:34,554 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-08-14 01:19:34,576 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-08-14 01:19:34,589 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-08-14 01:19:34,610 [INFO] ApiDbMcu:508 - Load IP Config File for LWIP
+2024-08-14 01:19:34,631 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-08-14 01:19:34,651 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-08-14 01:19:34,668 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST

@@ -1,0 +1,28 @@
+02:11:06 **** Incremental Build of configuration Debug for project lab04new ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+../Core/Src/stm32f7xx_hal_msp.c: In function 'MX_GPIO_Init':
+../Core/Src/stm32f7xx_hal_msp.c:91:9: error: 'GPIO_InitStruct' undeclared (first use in this function); did you mean 'GPIO_Initstruct'?
+   91 |         GPIO_InitStruct.Pin = GPIO_PIN_13;
+      |         ^~~~~~~~~~~~~~~
+      |         GPIO_Initstruct
+../Core/Src/stm32f7xx_hal_msp.c:91:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/stm32f7xx_hal_msp.c:85:26: warning: unused variable 'GPIO_Initstruct' [-Wunused-variable]
+   85 |         GPIO_InitTypeDef GPIO_Initstruct = {0};
+      |                          ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/stm32f7xx_hal_msp.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:168:17: warning: implicit declaration of function 'HAL_UART_Transmit' [-Wimplicit-function-declaration]
+  168 |                 HAL_UART_Transmit(&huart3, (uint8_t *) " --- ", 3, 100);
+      |                 ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:168:36: error: 'huart3' undeclared (first use in this function)
+  168 |                 HAL_UART_Transmit(&huart3, (uint8_t *) " --- ", 3, 100);
+      |                                    ^~~~~~
+../Core/Src/main.c:168:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+02:11:06 Build Failed. 5 errors, 2 warnings. (took 374ms)
+

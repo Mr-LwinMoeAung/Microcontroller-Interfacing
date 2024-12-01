@@ -1,0 +1,26 @@
+15:55:24 **** Build of configuration Debug for project Lab4_TEST ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:18: warning: implicit declaration of function '__HAL_UART_GET_FLAG' [-Wimplicit-function-declaration]
+  102 |           while (__HAL_UART_GET_FLAG(&huart3, UART_FLAG_TC) == RESET) {}
+      |                  ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:102:39: error: 'huart3' undeclared (first use in this function)
+  102 |           while (__HAL_UART_GET_FLAG(&huart3, UART_FLAG_TC) == RESET) {}
+      |                                       ^~~~~~
+../Core/Src/main.c:102:39: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:102:47: error: 'UART_FLAG_TC' undeclared (first use in this function); did you mean 'I2C_FLAG_TC'?
+  102 |           while (__HAL_UART_GET_FLAG(&huart3, UART_FLAG_TC) == RESET) {}
+      |                                               ^~~~~~~~~~~~
+      |                                               I2C_FLAG_TC
+../Core/Src/main.c:103:19: warning: implicit declaration of function 'HAL_UART_Transmit' [-Wimplicit-function-declaration]
+  103 |                   HAL_UART_Transmit(&huart3, (uint8_t*)&dot, 1, 400);
+      |                   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:103:57: error: 'dot' undeclared (first use in this function)
+  103 |                   HAL_UART_Transmit(&huart3, (uint8_t*)&dot, 1, 400);
+      |                                                         ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+15:55:26 Build Failed. 4 errors, 2 warnings. (took 2s.16ms)
+
